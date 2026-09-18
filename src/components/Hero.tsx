@@ -6,11 +6,9 @@ import {
   Trees, 
   Calendar, 
   PhoneCall, 
-  ArrowDown, 
   Sparkles,
   MapPin,
-  CheckCircle2,
-  Users
+  CheckCircle2
 } from 'lucide-react';
 
 interface HeroProps {
@@ -55,7 +53,7 @@ export const Hero: React.FC<HeroProps> = ({ config, onBookVisit, onCalculate }) 
             </div>
 
             {/* Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] font-bold text-[#1E2623] leading-[1.25] tracking-tight mb-5 font-['Playfair_Display',serif]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] font-bold text-[#1E2623] leading-[1.25] tracking-tight mb-5 font-serif">
               სითბო, ღირსება და{' '}
               <span className="text-[#1B7A6E] underline decoration-[#C99726]/60 decoration-wavy decoration-2">
                 24/7 პროფესიონალური ზრუნვა
@@ -105,7 +103,7 @@ export const Hero: React.FC<HeroProps> = ({ config, onBookVisit, onCalculate }) 
               <button
                 id="hero-book-visit-btn"
                 onClick={onBookVisit}
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#1B7A6E] text-white font-semibold shadow-md hover:bg-[#156056] hover:shadow-lg transition-all transform hover:-translate-y-0.5"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#1B7A6E] text-white font-semibold shadow-md hover:bg-[#156056] hover:shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer"
               >
                 <Calendar className="w-5 h-5 text-amber-300" />
                 <span>უფასო ვიზიტის დაჯავშნა</span>
@@ -114,7 +112,7 @@ export const Hero: React.FC<HeroProps> = ({ config, onBookVisit, onCalculate }) 
               <button
                 id="hero-calculator-btn"
                 onClick={onCalculate}
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white text-[#1B7A6E] border-2 border-[#1B7A6E] font-semibold hover:bg-emerald-50/50 transition-all"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white text-[#1B7A6E] border-2 border-[#1B7A6E] font-semibold hover:bg-emerald-50/50 transition-all cursor-pointer"
               >
                 <span>ღირებულების კალკულატორი</span>
               </button>
@@ -151,11 +149,13 @@ export const Hero: React.FC<HeroProps> = ({ config, onBookVisit, onCalculate }) 
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Main Exterior Residence Image */}
-              <div className="relative rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-white aspect-[4/3]">
+              <div className="relative rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-[#E8F0EC] aspect-[4/3]">
                 <img
-                  src="/src/assets/images/royal_care_exterior_1789649061699.jpg"
+                  src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
                   alt="Royal Care პანსიონატი დიღომი 8-ში"
                   className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                  loading="eager"
                 />
                 
                 {/* Overlay Badge */}
@@ -176,9 +176,11 @@ export const Hero: React.FC<HeroProps> = ({ config, onBookVisit, onCalculate }) 
               {/* Overlapping Secondary Card: Caring Nurse */}
               <div className="hidden sm:flex absolute -bottom-8 -left-8 w-56 rounded-2xl overflow-hidden border-4 border-white shadow-xl bg-white flex-col">
                 <img
-                  src="/src/assets/images/nurse_caring_senior_1789649127356.jpg"
+                  src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1200&q=80"
                   alt="მზრუნველი ექთანი მოხუცთან"
                   className="w-full h-28 object-cover"
+                  referrerPolicy="no-referrer"
+                  loading="lazy"
                 />
                 <div className="p-2.5 bg-white">
                   <p className="text-xs font-bold text-[#145E55] flex items-center gap-1">
