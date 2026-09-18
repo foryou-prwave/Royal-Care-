@@ -1,0 +1,6 @@
+{
+  "name": "Royal Care - მოხუცთა პანსიონატი",
+  "description": "Royal Care - მოხუცთა ზრუნვისა და მოვლის თანამედროვე პანსიონატი თბილისში, დიღომი 8. 24/7 სამედიცინო მეთვალყურეობა, მყუდრო გარემო და ოჯახური სითბო.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
